@@ -1,0 +1,26 @@
+[build-system]
+requires = ['setuptools', 'wheel']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = 'python-static-analysis-cfg'
+version = '0.1.0'
+authors = [
+    {name = 'Your Name', email = 'you@example.com'},
+]
+description = 'A Python-based static analysis tool for identifying unreachable code and potential memory leaks.'
+classifiers = [
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'License :: OSI Approved :: MIT License',
+]
+requires-python = '>=3.8'
+
+[project.urls]
+Documentation = 'https://python-static-analysis-cfg.readthedocs.io/'
+Source = 'https://github.com/AlibabaCloud-Projects/python-static-analysis-cfg'
+
+[project.optional-dependencies]
+lint = ['mypy']
+tests = ['pytest', 'pytest-cov']

@@ -1,0 +1,15 @@
+import unittest
+from src.cfg_builder.cfg import ConfigParser
+
+class TestConfigParser(unittest.TestCase):
+    def setUp(self):
+        self.parser = ConfigParser()
+
+    def test_parse_config(self):
+        config = self.parser.parse_config('test_config.ini')
+        self.assertIsNotNone(config)
+        self.assertIn('section1', config)
+        self.assertIn('section2', config)
+
+if __name__ == '__main__':
+    unittest.main()

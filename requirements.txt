@@ -1,0 +1,4 @@
+pyCFGParser>=1.0.0
+astroid>=2.0.0
+mypy>=0.900
+pytest>=7.0.0
